@@ -23,6 +23,7 @@
 		94FEE6102C33C64C00E32A00 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE60F2C33C64C00E32A00 /* CreateUsernameView.swift */; };
 		94FEE6122C33D30B00E32A00 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6112C33D30B00E32A00 /* CreatePasswordView.swift */; };
 		94FEE6142C33D3BA00E32A00 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6132C33D3BA00E32A00 /* CompleteSignUpView.swift */; };
+		94FEE6162C33D59500E32A00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6152C33D59500E32A00 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		94FEE60F2C33C64C00E32A00 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		94FEE6112C33D30B00E32A00 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		94FEE6132C33D3BA00E32A00 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		94FEE6152C33D59500E32A00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		94FEE5F02C32CFB200E32A00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94FEE6152C33D59500E32A00 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				94FEE60C2C33C3A200E32A00 /* AddEmailView.swift in Sources */,
 				94FEE6102C33C64C00E32A00 /* CreateUsernameView.swift in Sources */,
 				94FEE6142C33D3BA00E32A00 /* CompleteSignUpView.swift in Sources */,
+				94FEE6162C33D59500E32A00 /* User.swift in Sources */,
 				94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */,
 				94FEE60E2C33C58A00E32A00 /* IGTextFieldModifier.swift in Sources */,
 				94FEE6022C32D60E00E32A00 /* UserStatView.swift in Sources */,
