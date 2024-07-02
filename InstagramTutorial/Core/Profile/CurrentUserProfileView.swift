@@ -1,13 +1,13 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  InstagramTutorial
 //
-//  Created by Mia on 1/7/2024.
+//  Created by Mia on 2/7/2024.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
+struct CurrentUserProfileView: View {
     
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
@@ -16,7 +16,7 @@ struct ProfileView: View {
     ]
     
     var body: some View {
-//        NavigationStack {
+        NavigationStack {
             ScrollView {
                 // header
                 VStack(spacing: 10) {
@@ -92,10 +92,10 @@ struct ProfileView: View {
                     }
                 }
             }
-//        }
+        }
     }
 }
 
 #Preview {
-    ProfileView()
+    CurrentUserProfileView()
 }
