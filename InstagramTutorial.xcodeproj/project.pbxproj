@@ -17,6 +17,7 @@
 		94FEE6042C32D94200E32A00 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6032C32D94200E32A00 /* FeedView.swift */; };
 		94FEE6062C32D94800E32A00 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6052C32D94800E32A00 /* FeedCell.swift */; };
 		94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6072C32E00000E32A00 /* SearchView.swift */; };
+		94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6092C32E2C100E32A00 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		94FEE6032C32D94200E32A00 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		94FEE6052C32D94800E32A00 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		94FEE6072C32E00000E32A00 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		94FEE6092C32E2C100E32A00 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		94FEE5F52C32D00700E32A00 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				94FEE6092C32E2C100E32A00 /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				94FEE6062C32D94800E32A00 /* FeedCell.swift in Sources */,
 				94FEE5FF2C32D1F700E32A00 /* ProfileView.swift in Sources */,
 				94FEE5E42C32CF7C00E32A00 /* ContentView.swift in Sources */,
+				94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */,
 				94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */,
 				94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */,
 				94FEE6022C32D60E00E32A00 /* UserStatView.swift in Sources */,
