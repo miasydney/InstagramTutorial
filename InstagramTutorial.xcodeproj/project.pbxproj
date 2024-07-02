@@ -19,6 +19,7 @@
 		94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6072C32E00000E32A00 /* SearchView.swift */; };
 		94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6092C32E2C100E32A00 /* LoginView.swift */; };
 		94FEE60C2C33C3A200E32A00 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE60B2C33C3A200E32A00 /* AddEmailView.swift */; };
+		94FEE60E2C33C58A00E32A00 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE60D2C33C58A00E32A00 /* IGTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		94FEE6072C32E00000E32A00 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		94FEE6092C32E2C100E32A00 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		94FEE60B2C33C3A200E32A00 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		94FEE60D2C33C58A00E32A00 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				94FEE6012C32D60E00E32A00 /* UserStatView.swift */,
+				94FEE60D2C33C58A00E32A00 /* IGTextFieldModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */,
 				94FEE60C2C33C3A200E32A00 /* AddEmailView.swift in Sources */,
 				94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */,
+				94FEE60E2C33C58A00E32A00 /* IGTextFieldModifier.swift in Sources */,
 				94FEE6022C32D60E00E32A00 /* UserStatView.swift in Sources */,
 				94FEE6042C32D94200E32A00 /* FeedView.swift in Sources */,
 				94FEE5FD2C32D0FD00E32A00 /* MainTabView.swift in Sources */,
