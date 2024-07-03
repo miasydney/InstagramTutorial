@@ -28,6 +28,7 @@
 		94FEE61A2C3424FD00E32A00 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6192C3424FD00E32A00 /* Post.swift */; };
 		94FEE61C2C34E28900E32A00 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE61B2C34E28900E32A00 /* PostGridView.swift */; };
 		94FEE61E2C34E47200E32A00 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */; };
+		94FEE6202C34EB1500E32A00 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE61F2C34EB1500E32A00 /* UploadPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		94FEE6192C3424FD00E32A00 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		94FEE61B2C34E28900E32A00 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		94FEE61F2C34EB1500E32A00 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		94FEE5FB2C32D04500E32A00 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				94FEE61F2C34EB1500E32A00 /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94FEE6062C32D94800E32A00 /* FeedCell.swift in Sources */,
+				94FEE6202C34EB1500E32A00 /* UploadPostView.swift in Sources */,
 				94FEE5FF2C32D1F700E32A00 /* ProfileView.swift in Sources */,
 				94FEE5E42C32CF7C00E32A00 /* ContentView.swift in Sources */,
 				94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */,
