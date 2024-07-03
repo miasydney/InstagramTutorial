@@ -26,6 +26,8 @@
 		94FEE6162C33D59500E32A00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6152C33D59500E32A00 /* User.swift */; };
 		94FEE6182C34237500E32A00 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6172C34237500E32A00 /* CurrentUserProfileView.swift */; };
 		94FEE61A2C3424FD00E32A00 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE6192C3424FD00E32A00 /* Post.swift */; };
+		94FEE61C2C34E28900E32A00 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE61B2C34E28900E32A00 /* PostGridView.swift */; };
+		94FEE61E2C34E47200E32A00 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		94FEE6152C33D59500E32A00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		94FEE6172C34237500E32A00 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		94FEE6192C3424FD00E32A00 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		94FEE61B2C34E28900E32A00 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 			children = (
 				94FEE5FE2C32D1F700E32A00 /* ProfileView.swift */,
 				94FEE6172C34237500E32A00 /* CurrentUserProfileView.swift */,
+				94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			children = (
 				94FEE6012C32D60E00E32A00 /* UserStatView.swift */,
 				94FEE60D2C33C58A00E32A00 /* IGTextFieldModifier.swift */,
+				94FEE61B2C34E28900E32A00 /* PostGridView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -294,7 +300,9 @@
 				94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */,
 				94FEE6182C34237500E32A00 /* CurrentUserProfileView.swift in Sources */,
 				94FEE60C2C33C3A200E32A00 /* AddEmailView.swift in Sources */,
+				94FEE61C2C34E28900E32A00 /* PostGridView.swift in Sources */,
 				94FEE6102C33C64C00E32A00 /* CreateUsernameView.swift in Sources */,
+				94FEE61E2C34E47200E32A00 /* ProfileHeaderView.swift in Sources */,
 				94FEE6142C33D3BA00E32A00 /* CompleteSignUpView.swift in Sources */,
 				94FEE6162C33D59500E32A00 /* User.swift in Sources */,
 				94FEE6082C32E00000E32A00 /* SearchView.swift in Sources */,
