@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct ContentView: View {
     
     @StateObject var viewModel = ContentViewModel()
