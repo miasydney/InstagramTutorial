@@ -22,6 +22,8 @@
 		946098072C3662120004E950 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946098062C3662110004E950 /* ContentViewModel.swift */; };
 		9471430E2C36EF0E003BFFF8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */; };
 		947143112C37C4A7003BFFF8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */; };
+		947143132C37CD92003BFFF8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947143122C37CD92003BFFF8 /* UserService.swift */; };
+		947143172C37CE67003BFFF8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947143162C37CE67003BFFF8 /* SearchViewModel.swift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		946098062C3662110004E950 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		947143122C37CD92003BFFF8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		947143162C37CE67003BFFF8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		94B975332C35710000CB7E78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		94D391E92C36738200D709BA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		947143142C37CE56003BFFF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94FEE6072C32E00000E32A00 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		947143152C37CE5A003BFFF8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				947143162C37CE67003BFFF8 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		94B9752F2C3570D600CB7E78 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +221,7 @@
 		94FEE5EF2C32CFAE00E32A00 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				947143122C37CD92003BFFF8 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -285,7 +306,8 @@
 		94FEE5F92C32D02800E32A00 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				94FEE6072C32E00000E32A00 /* SearchView.swift */,
+				947143142C37CE56003BFFF8 /* View */,
+				947143152C37CE5A003BFFF8 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -412,6 +434,7 @@
 				94FEE5E42C32CF7C00E32A00 /* ContentView.swift in Sources */,
 				94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */,
 				94B975342C35710000CB7E78 /* AuthService.swift in Sources */,
+				947143132C37CD92003BFFF8 /* UserService.swift in Sources */,
 				94FEE61A2C3424FD00E32A00 /* Post.swift in Sources */,
 				94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */,
 				94FEE6182C34237500E32A00 /* CurrentUserProfileView.swift in Sources */,
@@ -429,6 +452,7 @@
 				94FEE60E2C33C58A00E32A00 /* IGTextFieldModifier.swift in Sources */,
 				94FEE6022C32D60E00E32A00 /* UserStatView.swift in Sources */,
 				94FEE6042C32D94200E32A00 /* FeedView.swift in Sources */,
+				947143172C37CE67003BFFF8 /* SearchViewModel.swift in Sources */,
 				94FEE5FD2C32D0FD00E32A00 /* MainTabView.swift in Sources */,
 				94FEE6122C33D30B00E32A00 /* CreatePasswordView.swift in Sources */,
 			);
