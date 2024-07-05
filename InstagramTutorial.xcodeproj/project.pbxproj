@@ -24,6 +24,8 @@
 		947143112C37C4A7003BFFF8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */; };
 		947143132C37CD92003BFFF8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947143122C37CD92003BFFF8 /* UserService.swift */; };
 		947143172C37CE67003BFFF8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947143162C37CE67003BFFF8 /* SearchViewModel.swift */; };
+		947143192C383413003BFFF8 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947143182C383412003BFFF8 /* EditProfileView.swift */; };
+		94802E942C38389100A2E4E4 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802E932C38389100A2E4E4 /* EditProfileViewModel.swift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -57,6 +59,8 @@
 		9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		947143122C37CD92003BFFF8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		947143162C37CE67003BFFF8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		947143182C383412003BFFF8 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		94802E932C38389100A2E4E4 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		94B975332C35710000CB7E78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		94D391E92C36738200D709BA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +151,25 @@
 				947143162C37CE67003BFFF8 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94802E912C38385800A2E4E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94802E932C38389100A2E4E4 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94802E922C38386000A2E4E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */,
+				94FEE5FE2C32D1F700E32A00 /* ProfileView.swift */,
+				947143182C383412003BFFF8 /* EditProfileView.swift */,
+				94FEE6172C34237500E32A00 /* CurrentUserProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		94B9752F2C3570D600CB7E78 /* View */ = {
@@ -287,9 +310,8 @@
 		94FEE5F72C32D01C00E32A00 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				94FEE5FE2C32D1F700E32A00 /* ProfileView.swift */,
-				94FEE6172C34237500E32A00 /* CurrentUserProfileView.swift */,
-				94FEE61D2C34E47200E32A00 /* ProfileHeaderView.swift */,
+				94802E922C38386000A2E4E4 /* View */,
+				94802E912C38385800A2E4E4 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -433,6 +455,7 @@
 				94FEE5FF2C32D1F700E32A00 /* ProfileView.swift in Sources */,
 				94FEE5E42C32CF7C00E32A00 /* ContentView.swift in Sources */,
 				94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */,
+				94802E942C38389100A2E4E4 /* EditProfileViewModel.swift in Sources */,
 				94B975342C35710000CB7E78 /* AuthService.swift in Sources */,
 				947143132C37CD92003BFFF8 /* UserService.swift in Sources */,
 				94FEE61A2C3424FD00E32A00 /* Post.swift in Sources */,
@@ -442,6 +465,7 @@
 				94FEE61C2C34E28900E32A00 /* PostGridView.swift in Sources */,
 				94FEE6102C33C64C00E32A00 /* CreateUsernameView.swift in Sources */,
 				946098072C3662120004E950 /* ContentViewModel.swift in Sources */,
+				947143192C383413003BFFF8 /* EditProfileView.swift in Sources */,
 				9471430E2C36EF0E003BFFF8 /* LoginViewModel.swift in Sources */,
 				94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */,
 				94FEE6222C34ECF700E32A00 /* UploadPostViewModel.swift in Sources */,
