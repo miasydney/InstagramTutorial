@@ -19,9 +19,9 @@ struct ContentView: View {
                 // no logged in user, show login view
                 LoginView()
                     .environmentObject(registrationViewModel)
-            } else {
+            } else if let currentUser = viewModel.currentUser {
                 // show main tab view
-                MainTabView()
+                MainTabView(user: currentUser)
             }
         }
     }

@@ -21,6 +21,7 @@
 		946098012C36603E0004E950 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 946098002C36603E0004E950 /* FirebaseDynamicLinks */; };
 		946098072C3662120004E950 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946098062C3662110004E950 /* ContentViewModel.swift */; };
 		9471430E2C36EF0E003BFFF8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */; };
+		947143112C37C4A7003BFFF8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -93,6 +94,7 @@
 				946097F32C36603E0004E950 /* FirebaseAppCheck in Frameworks */,
 				946097F12C36603E0004E950 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				946097F72C36603E0004E950 /* FirebaseAuth in Frameworks */,
+				947143112C37C4A7003BFFF8 /* FirebaseFirestoreSwift in Frameworks */,
 				946097FB2C36603E0004E950 /* FirebaseCrashlytics in Frameworks */,
 				946097FF2C36603E0004E950 /* FirebaseDatabaseSwift in Frameworks */,
 				946097F52C36603E0004E950 /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -118,6 +120,13 @@
 				946098062C3662110004E950 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9471430F2C37C4A7003BFFF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		94B9752F2C3570D600CB7E78 /* View */ = {
@@ -154,6 +163,7 @@
 			children = (
 				94FEE5E02C32CF7C00E32A00 /* InstagramTutorial */,
 				94FEE5DF2C32CF7C00E32A00 /* Products */,
+				9471430F2C37C4A7003BFFF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,6 +346,7 @@
 				946097FC2C36603E0004E950 /* FirebaseDatabase */,
 				946097FE2C36603E0004E950 /* FirebaseDatabaseSwift */,
 				946098002C36603E0004E950 /* FirebaseDynamicLinks */,
+				947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */,
 			);
 			productName = InstagramTutorial;
 			productReference = 94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */;
@@ -697,6 +708,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 946097E92C36603E0004E950 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDynamicLinks;
+		};
+		947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 946097E92C36603E0004E950 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
