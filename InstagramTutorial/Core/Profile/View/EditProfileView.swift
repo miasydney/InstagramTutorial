@@ -21,7 +21,7 @@ struct EditProfileView: View {
         VStack {
             // toolbar
             VStack {
-                /Users/miabenn/Desktop/app_development/AppStuff courses/InstagramTutorial/InstagramTutorial/Core/Feed             HStack {
+                 HStack {
                     Button("Cancel") {
                         dismiss()
                     }
