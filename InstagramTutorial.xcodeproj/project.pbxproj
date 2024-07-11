@@ -36,6 +36,9 @@
 		94802EAB2C3FA2D100A2E4E4 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EAA2C3FA2D100A2E4E4 /* FeedCellViewModel.swift */; };
 		94802EB22C400DA600A2E4E4 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EB12C400DA600A2E4E4 /* CommentsView.swift */; };
 		94802EB42C400DB100A2E4E4 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EB32C400DB100A2E4E4 /* CommentsCell.swift */; };
+		94802ED62C4013B900A2E4E4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED52C4013B900A2E4E4 /* Comment.swift */; };
+		94802ED82C4014B600A2E4E4 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED72C4014B600A2E4E4 /* CommentService.swift */; };
+		94802EDA2C4014C000A2E4E4 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED92C4014C000A2E4E4 /* CommentsViewModel.swift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -79,6 +82,9 @@
 		94802EAA2C3FA2D100A2E4E4 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		94802EB12C400DA600A2E4E4 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		94802EB32C400DB100A2E4E4 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		94802ED52C4013B900A2E4E4 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		94802ED72C4014B600A2E4E4 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		94802ED92C4014C000A2E4E4 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		94B975332C35710000CB7E78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		94D391E92C36738200D709BA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +265,7 @@
 		94802EAD2C400D7400A2E4E4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				94802ED72C4014B600A2E4E4 /* CommentService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -266,6 +273,7 @@
 		94802EAE2C400D7500A2E4E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				94802ED92C4014C000A2E4E4 /* CommentsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 		94802EB02C400D7800A2E4E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94802ED52C4013B900A2E4E4 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -588,6 +597,8 @@
 				946098072C3662120004E950 /* ContentViewModel.swift in Sources */,
 				94802EAB2C3FA2D100A2E4E4 /* FeedCellViewModel.swift in Sources */,
 				94802EA32C3F9A8D00A2E4E4 /* PostService.swift in Sources */,
+				94802ED82C4014B600A2E4E4 /* CommentService.swift in Sources */,
+				94802EDA2C4014C000A2E4E4 /* CommentsViewModel.swift in Sources */,
 				947143192C383413003BFFF8 /* EditProfileView.swift in Sources */,
 				94802EA72C3F9CB700A2E4E4 /* PostGridViewModel.swift in Sources */,
 				9471430E2C36EF0E003BFFF8 /* LoginViewModel.swift in Sources */,
@@ -604,6 +615,7 @@
 				94FEE6042C32D94200E32A00 /* FeedView.swift in Sources */,
 				94802E9B2C3D103E00A2E4E4 /* CircularProfileImageView.swift in Sources */,
 				947143172C37CE67003BFFF8 /* SearchViewModel.swift in Sources */,
+				94802ED62C4013B900A2E4E4 /* Comment.swift in Sources */,
 				94FEE5FD2C32D0FD00E32A00 /* MainTabView.swift in Sources */,
 				94FEE6122C33D30B00E32A00 /* CreatePasswordView.swift in Sources */,
 			);
