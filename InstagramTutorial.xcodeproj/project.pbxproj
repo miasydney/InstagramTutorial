@@ -32,6 +32,8 @@
 		94802EA12C3F909700A2E4E4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EA02C3F909700A2E4E4 /* FeedViewModel.swift */; };
 		94802EA32C3F9A8D00A2E4E4 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EA22C3F9A8C00A2E4E4 /* PostService.swift */; };
 		94802EA72C3F9CB700A2E4E4 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EA62C3F9CB700A2E4E4 /* PostGridViewModel.swift */; };
+		94802EA92C3FA16900A2E4E4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 94802EA82C3FA16900A2E4E4 /* FirebaseStorage */; };
+		94802EAB2C3FA2D100A2E4E4 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EAA2C3FA2D100A2E4E4 /* FeedCellViewModel.swift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -72,6 +74,7 @@
 		94802EA02C3F909700A2E4E4 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		94802EA22C3F9A8C00A2E4E4 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		94802EA62C3F9CB700A2E4E4 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		94802EAA2C3FA2D100A2E4E4 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		94B975332C35710000CB7E78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		94D391E92C36738200D709BA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,7 @@
 				946097F32C36603E0004E950 /* FirebaseAppCheck in Frameworks */,
 				946097F12C36603E0004E950 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				946097F72C36603E0004E950 /* FirebaseAuth in Frameworks */,
+				94802EA92C3FA16900A2E4E4 /* FirebaseStorage in Frameworks */,
 				947143112C37C4A7003BFFF8 /* FirebaseFirestoreSwift in Frameworks */,
 				946097FB2C36603E0004E950 /* FirebaseCrashlytics in Frameworks */,
 				946097FF2C36603E0004E950 /* FirebaseDatabaseSwift in Frameworks */,
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				94802EA02C3F909700A2E4E4 /* FeedViewModel.swift */,
+				94802EAA2C3FA2D100A2E4E4 /* FeedCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				946098002C36603E0004E950 /* FirebaseDynamicLinks */,
 				947143102C37C4A7003BFFF8 /* FirebaseFirestoreSwift */,
 				94802E982C3D0F8800A2E4E4 /* Kingfisher */,
+				94802EA82C3FA16900A2E4E4 /* FirebaseStorage */,
 			);
 			productName = InstagramTutorial;
 			productReference = 94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */;
@@ -533,6 +539,7 @@
 				94FEE6102C33C64C00E32A00 /* CreateUsernameView.swift in Sources */,
 				94802EA12C3F909700A2E4E4 /* FeedViewModel.swift in Sources */,
 				946098072C3662120004E950 /* ContentViewModel.swift in Sources */,
+				94802EAB2C3FA2D100A2E4E4 /* FeedCellViewModel.swift in Sources */,
 				94802EA32C3F9A8D00A2E4E4 /* PostService.swift in Sources */,
 				947143192C383413003BFFF8 /* EditProfileView.swift in Sources */,
 				94802EA72C3F9CB700A2E4E4 /* PostGridViewModel.swift in Sources */,
@@ -687,6 +694,7 @@
 				DEVELOPMENT_TEAM = 2Q3YDTT238;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Tutorial";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -716,6 +724,7 @@
 				DEVELOPMENT_TEAM = 2Q3YDTT238;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Tutorial";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -846,6 +855,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 94802E972C3D0F8800A2E4E4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		94802EA82C3FA16900A2E4E4 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 946097E92C36603E0004E950 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

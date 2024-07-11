@@ -17,7 +17,7 @@ struct PostService {
         let snapshot = try await postsCollection.getDocuments()
         var posts = try snapshot.documents.compactMap({ try $0.data(as: Post.self) })
         
-        for i in 0..<post.count {
+        for i in 0..<posts.count {
             let post = posts[i]
             let ownerUid = post.ownerUid
             let postUser = try await UserService.fetchUser(withUid: ownerUid)

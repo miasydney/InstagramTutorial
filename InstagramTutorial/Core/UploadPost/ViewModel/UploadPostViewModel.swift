@@ -30,7 +30,7 @@ class UploadPostViewModel: ObservableObject {
     
     func uploadPost(caption: String) async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return } // make sure someone is logged in and we have their uid
-        guard let uiImage = uiImge else { return } // make sure we have an image before we upload a post
+        guard let uiImage = uiImage else { return } // make sure we have an image before we upload a post
         
         let postRef = Firestore.firestore().collection("posts").document() // firebase generates a document identifier
         guard let imageUrl = try await ImageUploader.uploadImage(image: uiImage) else { return }         // upload image
