@@ -39,6 +39,7 @@
 		94802ED62C4013B900A2E4E4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED52C4013B900A2E4E4 /* Comment.swift */; };
 		94802ED82C4014B600A2E4E4 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED72C4014B600A2E4E4 /* CommentService.swift */; };
 		94802EDA2C4014C000A2E4E4 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802ED92C4014C000A2E4E4 /* CommentsViewModel.swift */; };
+		94802EDC2C40190E00A2E4E4 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EDB2C40190E00A2E4E4 /* DeveloperPreview.swift */; };
 		94B975342C35710000CB7E78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B975332C35710000CB7E78 /* AuthService.swift */; };
 		94D391EA2C36738200D709BA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D391E92C36738200D709BA /* RegistrationViewModel.swift */; };
 		94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEE5E12C32CF7C00E32A00 /* InstagramTutorialApp.swift */; };
@@ -85,6 +86,7 @@
 		94802ED52C4013B900A2E4E4 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		94802ED72C4014B600A2E4E4 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		94802ED92C4014C000A2E4E4 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		94802EDB2C40190E00A2E4E4 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		94B975332C35710000CB7E78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		94D391E92C36738200D709BA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		94FEE5DE2C32CF7C00E32A00 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,6 +388,7 @@
 		94FEE5F12C32CFB300E32A00 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94802EDB2C40190E00A2E4E4 /* DeveloperPreview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 			files = (
 				94FEE6062C32D94800E32A00 /* FeedCell.swift in Sources */,
 				94FEE6202C34EB1500E32A00 /* UploadPostView.swift in Sources */,
+				94802EDC2C40190E00A2E4E4 /* DeveloperPreview.swift in Sources */,
 				94802EB22C400DA600A2E4E4 /* CommentsView.swift in Sources */,
 				94FEE5FF2C32D1F700E32A00 /* ProfileView.swift in Sources */,
 				94FEE5E42C32CF7C00E32A00 /* ContentView.swift in Sources */,

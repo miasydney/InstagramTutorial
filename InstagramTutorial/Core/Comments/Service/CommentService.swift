@@ -12,7 +12,9 @@ import Firebase
 
 struct CommentService {
     
-    static func uploadComment(_ comment: Comment, postId: String) async throws {
+    let postId: String
+    
+    func uploadComment(_ comment: Comment) async throws {
         guard let commentData = try? Firestore.Encoder().encode(comment) else { return }
         
         // upload to firebase
@@ -22,6 +24,18 @@ struct CommentService {
             .document(postId)
             .collection("post-comments")
             .addDocument(data: commentData)
+    }
+    
+    func fetchComments() async throws -> [Comment] {
+        let snapshot = try await Firestore
+            .firestore()
+            .collection("posts")
+            .document(postId)
+            .collection("post-comments")
+            .order(by: "timestamp", descending: true)
+            .getDocuments()
+        
+        return snapshot.documents.compactMap({ try? $0.data(as: Comment.self)})
     }
     
 }
