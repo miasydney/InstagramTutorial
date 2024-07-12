@@ -18,18 +18,16 @@ struct CommentService {
         guard let commentData = try? Firestore.Encoder().encode(comment) else { return }
         
         // upload to firebase
-        try await Firestore
-            .firestore()
-            .collection("posts")
+        try await FirebaseConstants
+            .PostsCollection
             .document(postId)
             .collection("post-comments")
             .addDocument(data: commentData)
     }
     
     func fetchComments() async throws -> [Comment] {
-        let snapshot = try await Firestore
-            .firestore()
-            .collection("posts")
+        let snapshot = try await FirebaseConstants
+            .PostsCollection
             .document(postId)
             .collection("post-comments")
             .order(by: "timestamp", descending: true)
