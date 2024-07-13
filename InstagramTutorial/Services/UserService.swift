@@ -54,7 +54,7 @@ class UserService {
             .FollowersCollection
             .document(uid)
             .collection("user-followers")
-            .getDocuments()
+            .getDocuments() // this gives us back a list of user ids
         
         return try await fetchUsers(snapshot)
     }
@@ -77,7 +77,8 @@ class UserService {
         var users = [User]()
         
         for doc in snapshot.documents {
-            users.append(try await fetchUser(withUid: doc.documentID))
+            let uid = doc.documentID
+            users.append(try await fetchUser(withUid: uid))
         }
         
         return users
