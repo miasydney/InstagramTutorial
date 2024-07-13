@@ -12,7 +12,14 @@ class ProfileViewModel: ObservableObject {
     @Published var user: User
     
     init(user: User) {
+        print("DEBUG: Did init...")
         self.user = user
+    }
+    
+    func fetchUserStats() {
+        Task {
+            self.user.stats = try await UserService.fetchUserStats(uid: user.id)
+        }
     }
 }
 

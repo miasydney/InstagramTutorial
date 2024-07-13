@@ -16,6 +16,10 @@ struct ProfileHeaderView: View {
         return viewModel.user
     }
     
+    private var stats: UserStats {
+        return user.stats ?? .init(followingCount: 0, followersCount: 0, postsCount: 0)
+    }
+    
     private var isFollowed: Bool {
         return user.isFollowed ?? false
     }
@@ -65,13 +69,19 @@ struct ProfileHeaderView: View {
                 Spacer()
                 
                 HStack(spacing: 8) {
-                    UserStatView(value: 3, title: "Posts")
+                    UserStatView(value: stats.postsCount, title: "Posts")
+
+                    NavigationLink(value: UserListConfig.followers(uid: user.id)) {
+                        UserStatView(value: stats.followersCount, title: "Followers")
+                    }
                     
-                    UserStatView(value: 332, title: "Followers")
+                    NavigationLink(value: UserListConfig.following(uid: user.id)) {
+                        UserStatView(value: stats.followingCount, title: "Following")
+                    }
                     
-                    UserStatView(value: 343, title: "Following")
                 }
             }
+            
             .padding(.horizontal)
             
             // name and bio
@@ -116,6 +126,13 @@ struct ProfileHeaderView: View {
 
             Divider()
             
+        }
+        .navigationDestination(for: UserListConfig.self, destination: { config in
+            Text(config.navigationTitle)
+        })
+        .onAppear {
+            viewModel.fetchUserStats()
+            viewModel.checkIfUserIsFollowed()
         }
         .fullScreenCover(isPresented: $showEditProfile) {
             EditProfileView(user: user)

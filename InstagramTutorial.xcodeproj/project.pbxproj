@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94039DC22C4273610058007E /* UserListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DC12C4273610058007E /* UserListConfig.swift */; };
 		946097EB2C36603E0004E950 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EA2C36603E0004E950 /* FirebaseAnalytics */; };
 		946097ED2C36603E0004E950 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EC2C36603E0004E950 /* FirebaseAnalyticsOnDeviceConversion */; };
 		946097EF2C36603E0004E950 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EE2C36603E0004E950 /* FirebaseAnalyticsSwift */; };
@@ -72,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94039DC12C4273610058007E /* UserListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfig.swift; sourceTree = "<group>"; };
 		946098062C3662110004E950 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		947143122C37CD92003BFFF8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 			children = (
 				94FEE6152C33D59500E32A00 /* User.swift */,
 				94FEE6192C3424FD00E32A00 /* Post.swift */,
+				94039DC12C4273610058007E /* UserListConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94039DC22C4273610058007E /* UserListConfig.swift in Sources */,
 				94FBA75A2C40F34900B2DEAE /* Timestamp.swift in Sources */,
 				94FEE6062C32D94800E32A00 /* FeedCell.swift in Sources */,
 				94FEE6202C34EB1500E32A00 /* UploadPostView.swift in Sources */,
