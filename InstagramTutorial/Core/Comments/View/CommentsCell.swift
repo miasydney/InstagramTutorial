@@ -37,7 +37,7 @@ struct CommentsCell: View {
         .padding(.horizontal)
     }
 }
-
-#Preview {
-    CommentsCell(comment: dev.comment)
-}
+//
+//#Preview {
+//    CommentsCell(comment: dev.comment)
+//}
