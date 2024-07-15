@@ -15,6 +15,8 @@
 		94039DD12C42A48D0058007E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DD02C42A48D0058007E /* Notification.swift */; };
 		94039DD32C42A4B20058007E /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DD22C42A4B20058007E /* NotificationType.swift */; };
 		94039DD52C42A6FC0058007E /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DD42C42A6FC0058007E /* NotificationsViewModel.swift */; };
+		94039DD72C42A96E0058007E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DD62C42A96E0058007E /* NotificationService.swift */; };
+		94039DDD2C44E1220058007E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94039DDC2C44E1220058007E /* NotificationManager.swift */; };
 		946097EB2C36603E0004E950 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EA2C36603E0004E950 /* FirebaseAnalytics */; };
 		946097ED2C36603E0004E950 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EC2C36603E0004E950 /* FirebaseAnalyticsOnDeviceConversion */; };
 		946097EF2C36603E0004E950 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 946097EE2C36603E0004E950 /* FirebaseAnalyticsSwift */; };
@@ -88,6 +90,8 @@
 		94039DD02C42A48D0058007E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		94039DD22C42A4B20058007E /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		94039DD42C42A6FC0058007E /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		94039DD62C42A96E0058007E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		94039DDC2C44E1220058007E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		946098062C3662110004E950 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9471430D2C36EF0E003BFFF8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		947143122C37CD92003BFFF8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		94039DC72C42A00B0058007E /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				94039DDB2C44E1140058007E /* Manager */,
 				94039DC92C42A02F0058007E /* View */,
 				94039DCA2C42A0320058007E /* ViewModel */,
 				94039DC82C42A0280058007E /* Model */,
@@ -204,8 +209,17 @@
 		94039DCB2C42A0360058007E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				94039DD62C42A96E0058007E /* NotificationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		94039DDB2C44E1140058007E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				94039DDC2C44E1220058007E /* NotificationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		946098042C3661FA0004E950 /* View */ = {
@@ -674,11 +688,13 @@
 				94FEE60A2C32E2C100E32A00 /* LoginView.swift in Sources */,
 				94FBA75D2C40F48900B2DEAE /* Constants.swift in Sources */,
 				94802E942C38389100A2E4E4 /* EditProfileViewModel.swift in Sources */,
+				94039DDD2C44E1220058007E /* NotificationManager.swift in Sources */,
 				94039DC62C4298F40058007E /* UserListViewModel.swift in Sources */,
 				94039DD52C42A6FC0058007E /* NotificationsViewModel.swift in Sources */,
 				94B975342C35710000CB7E78 /* AuthService.swift in Sources */,
 				947143132C37CD92003BFFF8 /* UserService.swift in Sources */,
 				94FEE61A2C3424FD00E32A00 /* Post.swift in Sources */,
+				94039DD72C42A96E0058007E /* NotificationService.swift in Sources */,
 				94039DD32C42A4B20058007E /* NotificationType.swift in Sources */,
 				94039DD12C42A48D0058007E /* Notification.swift in Sources */,
 				94FEE5E22C32CF7C00E32A00 /* InstagramTutorialApp.swift in Sources */,
