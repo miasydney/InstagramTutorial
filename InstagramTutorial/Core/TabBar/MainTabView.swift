@@ -39,7 +39,7 @@ struct MainTabView: View {
                     Image(systemName: "plus.square")
                 }.tag(2)
             
-            Text("Notifications")
+            NotificationsView()
                 .onAppear {
                     selectedIndex = 3
                 }
@@ -47,7 +47,7 @@ struct MainTabView: View {
                     Image(systemName: "heart")
                 }.tag(3)
             
-            CurrentUserProfileView(user: User.MOCK_USERS[0])
+            CurrentUserProfileView(user: user)
                 .onAppear {
                     selectedIndex = 4
                 }
