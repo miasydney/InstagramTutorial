@@ -14,6 +14,7 @@ class NotificationService {
         
         let snapshot = try await FirebaseConstants
             .UserNotificationCollection(uid: currentUid)
+            .order(by: "timestamp", descending: true)
             .getDocuments()
         
         return snapshot.documents.compactMap({ try? $0.data(as: Notification.self) })
@@ -22,7 +23,7 @@ class NotificationService {
     func uploadNotification(toUid uid: String, type: NotificationType, post: Post? = nil) {
         guard let currentUid = Auth.auth().currentUser?.uid, uid != currentUid else { return } // get current user id and make sure not sending notification to yourself
         
-        let ref = FirebaseConstants.UserNotificationCollection(uid: currentUid).document()
+        let ref = FirebaseConstants.UserNotificationCollection(uid: uid).document()
         let notification = Notification(id: ref.documentID,
                                         postId: post?.id,
                                         timestamp: Timestamp(),
@@ -34,7 +35,34 @@ class NotificationService {
         
     }
     
-    func deleteNotification(toUid uid: String, type: NotificationType, post: Post? = nil) {
+    func deleteNotification(toUid uid: String, type: NotificationType, post: Post? = nil) async throws {
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+        
+        let snapshot = try await FirebaseConstants
+            .UserNotificationCollection(uid: uid)
+            .whereField("notificationSenderUid", isEqualTo: currentUid)
+            .getDocuments()
+        
+        let notifications = snapshot.documents.compactMap({ try? $0.data(as: Notification.self) })
+        
+        let filteredByType = notifications.filter({ $0.type == type }) // gets all notifications by type
+        
+        if type == .follow {
+            for notification in filteredByType {
+                try await FirebaseConstants
+                    .UserNotificationCollection(uid: uid)
+                    .document(notification.id)
+                    .delete()
+            }
+        } else {
+            guard let notificationToDelete = filteredByType.first(where: { $0.postId == post?.id }) else { return }// gets notifications for that post
+            
+            try await FirebaseConstants
+                .UserNotificationCollection(uid: uid)
+                .document(notificationToDelete.id)
+                .delete()
+        }
+        
         
     }
 }
